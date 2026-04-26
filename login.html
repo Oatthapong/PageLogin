@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="brand-panel">
+            <span class="eyebrow">Secure Access</span>
+            <h1>หน้า Login ที่ดูทันสมัย พร้อมต่อยอดเป็นระบบจริงได้เลย</h1>
+            <p>
+                ดีไซน์ชุดนี้แบ่งเป็น 3 ไฟล์ชัดเจน: `HTML` สำหรับหน้าแบบฟอร์ม, `CSS` สำหรับตกแต่ง,
+                และ `PHP` สำหรับรับค่าการเข้าสู่ระบบจากผู้ใช้
+            </p>
+
+            <div class="brand-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h2>Responsive</h2>
+                    <p>รองรับทั้งหน้าจอคอมและมือถือด้วยเลย์เอาต์ที่ปรับตัวอัตโนมัติ</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h2>Clean UI</h2>
+                    <p>ช่องกรอกข้อมูลอ่านง่าย มีระยะห่างพอดี และเน้นปุ่มหลักอย่างชัดเจน</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h2>PHP Ready</h2>
+                    <p>กดส่งข้อมูลแล้วจะถูกส่งไปที่ `login.php` เพื่อประมวลผลได้ทันที</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="form-panel">
+            <div class="login-card">
+                <div class="card-head">
+                    <span class="card-kicker">Member Login</span>
+                    <h2>เข้าสู่ระบบ</h2>
+                    <p>กรอกอีเมลและรหัสผ่านเพื่อส่งข้อมูลไปยังไฟล์ PHP</p>
+                </div>
+
+                <form action="login.php" method="post" class="login-form">
+                    <label class="field-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="text-field"
+                        placeholder="admin@example.com"
+                        autocomplete="username"
+                        inputmode="email"
+                        required
+                    >
+
+                    <label class="field-label" for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="text-field"
+                        placeholder="กรอกรหัสผ่าน"
+                        autocomplete="current-password"
+                        minlength="6"
+                        required
+                    >
+
+                    <div class="row-inline">
+                        <label class="checkbox-wrap" for="remember">
+                            <input type="checkbox" id="remember" name="remember">
+                            <span>จดจำการเข้าสู่ระบบ</span>
+                        </label>
+                        <a href="#" class="text-link">ลืมรหัสผ่าน?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">เข้าสู่ระบบ</button>
+                </form>
+
+                <div class="demo-hint">
+                    <strong>ข้อมูลทดสอบ</strong>
+                    <span>อีเมล: admin@example.com</span>
+                    <span>รหัสผ่าน: 123456</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
